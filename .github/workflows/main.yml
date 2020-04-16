@@ -21,3 +21,10 @@ jobs:
       run:  msys2do make -f makefile.mingw32 -j clean
     - name: make
       run:  msys2do make -f makefile.mingw32 -j
+    - name: make examples
+      run:  msys2do make -f makefile.mingw32 -j examples
+       
+    - uses: actions/upload-artifact@v1
+      with:
+          name: artifact
+          path: .     
