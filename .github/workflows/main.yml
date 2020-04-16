@@ -18,6 +18,6 @@ jobs:
     - name: Install MSYS2 Dependencies
       run:  msys2do pacman --noconfirm -S --needed mingw-w64-i686-gcc mingw-w64-i686-crt make
     - name: make clean
-      run:  make -f makefile.mingw32 -j clean
+      run:  msys2do make -f makefile.mingw32 -j clean
     - name: make
-      run:  make -f makefile.mingw32 -j
+      run:  msys2do make -f makefile.mingw32 -j
