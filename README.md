@@ -1,3 +1,5 @@
+Duplicate of https://github.com/jgaeddert/liquid-dsp
+
 
 liquid-dsp
 ==========
